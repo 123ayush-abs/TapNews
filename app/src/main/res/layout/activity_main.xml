@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:layout_marginTop="0dp"
+      android:background="@color/white"
+      android:id="@+id/tool1">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center_vertical">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="My News"
+              android:layout_marginTop="8dp"
+              android:textStyle="bold"
+              android:fontFamily="@font/google_sans_bold"
+              android:textSize="25sp"
+              android:textColor="#F8961E">
+
+
+          </TextView>
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="290dp"
+              android:src="@drawable/news">
+
+          </ImageView>
+
+
+      </RelativeLayout>
+
+
+
+
+
+  </androidx.appcompat.widget.Toolbar>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/inc"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_below="@+id/tool1"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/white"
+        app:tabIndicatorColor="#03A9F4"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="#03A9F4"
+        app:tabTextColor="#618C8F">
+
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/news1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/sports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sports">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/bolly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bollywood">
+
+        </com.google.android.material.tabs.TabItem>
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tech"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tech">
+
+        </com.google.android.material.tabs.TabItem>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inc"
+        android:layout_marginTop="0dp"
+        android:id="@+id/fragcontain">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+
+</RelativeLayout>
